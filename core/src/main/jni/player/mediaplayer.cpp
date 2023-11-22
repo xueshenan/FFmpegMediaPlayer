@@ -18,7 +18,7 @@
 
 //#define LOG_NDEBUG 0
 #define LOG_TAG "FFmpegMediaPlayer"
-//#include <android/log.h>
+#include <android/log.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -36,7 +36,7 @@ using namespace std;
 
 MediaPlayer::MediaPlayer()
 {
-    //__android_log_write(ANDROID_LOG_VERBOSE, LOG_TAG, "constructor");
+    __android_log_write(ANDROID_LOG_ERROR, LOG_TAG, "constructor");
 	
     state = NULL;
     

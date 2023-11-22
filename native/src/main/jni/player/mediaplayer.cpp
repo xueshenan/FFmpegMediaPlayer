@@ -146,7 +146,7 @@ status_t MediaPlayer::setDataSource(VideoState *player)
 
 status_t MediaPlayer::setDataSource(const char *url, const char *headers)
 {
-	//__android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "setDataSource(%s)", url);
+	__android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "setDataSource(%s)", url);
     status_t err = BAD_VALUE;
     if (url != NULL) {
         //const sp<IMediaPlayerService>& service(getMediaPlayerService());
@@ -165,7 +165,7 @@ status_t MediaPlayer::setDataSource(const char *url, const char *headers)
 
 status_t MediaPlayer::setDataSource(int fd, int64_t offset, int64_t length)
 {
-	//__android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "setDataSource(%d, %lld, %lld)", fd, offset, length);
+	__android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "setDataSource(%d, %lld, %lld)", fd, offset, length);
     status_t err = UNKNOWN_ERROR;
     //const sp<IMediaPlayerService>& service(getMediaPlayerService());
     //if (state != 0) {

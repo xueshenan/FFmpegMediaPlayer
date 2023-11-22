@@ -16,6 +16,7 @@ import android.widget.EditText;
 
 import androidx.fragment.app.FragmentActivity;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -41,7 +42,9 @@ public class VideoPlayerActivity extends FragmentActivity {
 
         final EditText uriText = (EditText) findViewById(R.id.uri);
         // Uncomment for debugging
-        uriText.setText("https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_1MB.mp4");
+//        uriText.setText("https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_1MB.mp4");
+//        File file = new File("/storage/emulated/0/Download/goertek.h264");
+        uriText.setText("file:///storage/emulated/0/Download/goertek.h264");
 
         Intent intent = getIntent();
 
